@@ -1,10 +1,83 @@
-import { Project } from '../shared/types';
-export const sampleData: Project = {
-  id: 'sample',
-  title: 'Sample',
-  image:
-    'https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww',
-  link: 'sample.com',
-  github: 'github.com',
-  description: 'This is a sample data',
-};
+import { Project } from "../shared/types";
+export const sampleData: Project[] = [
+   {
+      id: 0,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 1,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 2,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 3,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 4,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 5,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 6,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 7,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 8,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+   {
+      id: 9,
+      title: "Sample",
+      image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
+      link: "sample.com",
+      github: "github.com",
+      description: "This is a sample data",
+   },
+];

@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] Color re-setting
-- [ ] Fill the data (Projects, Experience, Images...)
-- [ ] ExperienceCard components
-- [ ] Research for Canvas API
+-  [ ] Research for Three.js Particle
+-  [ ] Fill the data (Projects, Experience, Images...)
+-  [ ] ExperienceCard components
+-  [ ] Research for Canvas API
