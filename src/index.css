@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --deepbread-white: 240 243 239;
+    --deepbread-green: 151 176 167;
+    --deepbread-lightgreen: 229 230 176;
+    --deepbread-superlightgreen: 244 246 229;
+    --deepbread-teagreen: 203 223 189;
+    --deepbread-brown: 53 48 48;
+  }
+}
