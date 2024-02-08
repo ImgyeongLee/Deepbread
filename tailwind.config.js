@@ -3,6 +3,12 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      gridTemplateRows: {
+        experience: '46% 8% 46%',
+      },
+      gridTemplateColumns: {
+        experience: '46% 8% 46%',
+      },
       colors: {
         deepbread: {
           white: 'rgb(var(--deepbread-white))',

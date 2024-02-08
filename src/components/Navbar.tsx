@@ -7,6 +7,7 @@ import { navbarAnimationVariants } from '../shared/variants';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
+  const menus = ['About', 'Game', 'Awards', 'Experience', 'Projects', 'Contact'];
 
   const handleClick = (e: MouseEvent) => {
     e.preventDefault();
@@ -19,17 +20,14 @@ const Navbar = () => {
         <>
           <IoMdFlower onClick={handleClick} className="cursor-pointer" />
           <motion.div layout className="flex flex-row gap-5 text-base delay-100">
-            <div
-              className={cn('cursor-pointer transition ease-in-out hover:text-deepbread-green', {
-                'animate-appear': isActive,
-              })}>
-              About
-            </div>
-            <div className={cn({ 'animate-appear': isActive })}>Game</div>
-            <div className={cn({ 'animate-appear': isActive })}>Awards</div>
-            <div className={cn({ 'animate-appear': isActive })}>Experience</div>
-            <div className={cn({ 'animate-appear': isActive })}>Projects</div>
-            <div className={cn({ 'animate-appear': isActive })}>Contact</div>
+            {menus.map((menu) => (
+              <div
+                className={cn('cursor-pointer transition ease-in-out hover:text-deepbread-green', {
+                  'animate-appear': isActive,
+                })}>
+                {menu}
+              </div>
+            ))}
           </motion.div>
         </>
       );

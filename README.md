@@ -2,7 +2,6 @@
 
 ## TODO
 
--  [ ] Research for Three.js Particle
--  [ ] Fill the data (Projects, Experience, Images...)
--  [ ] ExperienceCard components
--  [ ] Research for Canvas API
+- [ ] Fill the data (Projects, Experience, Images...) (ALMOST DONE...)
+- [ ] Experience Section
+- [ ] Award Section and Data

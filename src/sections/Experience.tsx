@@ -1,30 +1,55 @@
 import Section from '../layouts/Section';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import ExperienceCard from '../components/ExperienceCard';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 const Experience = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
   const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
+    hidden: {
+      opacity: 0,
+      pathLength: 0,
+    },
     visible: {
-      pathLength: 1,
       opacity: 1,
+      pathLength: 1,
       transition: {
-        pathLength: { delay: 1, type: 'spring', duration: 1.5, bounce: 0 },
-        opacity: { delay: 1, duration: 0.01 },
+        duration: 1.5,
+        ease: 'easeInOut',
       },
     },
   };
 
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    } else {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
     <Section className="bg-gradient-to-t from-deepbread-teagreen to-deepbread-lightgreen flex flex-col">
       <div className="text-6xl font-bold pt-10 pb-5">
-        Experience<div className="text-base font-normal pt-3">Aiming for the best slowly, but surely</div>
+        Experience
+        <div className="text-base font-normal pt-3">Aiming for the best slowly, but surely</div>
       </div>
-      <motion.svg viewBox="0 0 600 600" initial="hidden" animate="visible">
-        <motion.line x1="360" y1="600" x2="360" y2="0" stroke="#000000" custom={1} variants={draw}></motion.line>
-      </motion.svg>
-      <ExperienceCard />
-      <div className="flex flex-col items-center justify-center gap-5 w-3/4 h-full"></div>
+      <div className="h-full grid grid-rows-experience grid-cols-experience">
+        <ExperienceCard className="col-span-1 row-start-3 row-end-4 w-2/3 justify-self-end" />
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg"
+          ref={ref}
+          viewBox="0 0 50 50"
+          initial="hidden"
+          animate={controls}
+          className="w-full h-full col-span-1 row-start-1 row-end-4">
+          <motion.line x1="25" y1="180" x2="25" y2="-120" stroke="#ffffff" variants={draw}></motion.line>
+        </motion.svg>
+        <ExperienceCard isRight={true} className="col-start-3 col-end-4 row-start-1 row-end-2 w-2/3" />
+      </div>
     </Section>
   );
 };
