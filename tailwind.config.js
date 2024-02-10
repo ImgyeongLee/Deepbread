@@ -19,6 +19,14 @@ export default {
           teagreen: 'rgb(var(--deepbread-teagreen))',
         },
       },
+      spacing: {
+        m5: '-5em',
+        m6: '-6em',
+        m7: '-7em',
+        m8: '-8em',
+        m9: '-9em',
+        m10: '-10em',
+      },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
